@@ -20,7 +20,7 @@ export const Select = ({ name, register }, ref) => {
         !loading &&
 
         countries.map((country, index) => (
-          <option key={index}>{country.name.common}</option>
+          <option key={index}>{country.name}</option>
         ))
       }
     </select>

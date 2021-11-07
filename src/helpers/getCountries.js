@@ -10,7 +10,7 @@ const fromApiResponseToCountries = apiResponse => {
 }
 
 export const getCountries = () => {
-  const apiUrl = "https://restcountries.com/v3.1/all";
+  const apiUrl = "https://restcountries.com/v2/all";
 
   return fetch(apiUrl)
     .then(res => res.json())
