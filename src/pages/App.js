@@ -31,7 +31,7 @@ function App() {
           <div className={styles.form_login}>
             <form onSubmit={handleSubmit(onSubmit, onInvalid)} className={styles.form_container}>
               <h1 className={styles.title}>Formulario</h1>
-              <input ref={input} type="text" {...register("name", { required: true, maxLength: 80 })} className={"name" in errors ? styles.error : ''} />
+              <input placeholder="Nombre" ref={input} type="text" {...register("name", { required: true, maxLength: 80 })} className={"name" in errors ? styles.error : ''} />
               <Select name="country" register={register} />
 
               <button className={styles.button}>
