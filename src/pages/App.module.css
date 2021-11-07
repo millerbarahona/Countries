@@ -1,0 +1,123 @@
+.error {
+  border: 2px solid red;
+}
+
+.body {
+  background: linear-gradient(90deg, rgba(41, 191, 154, 1) 0%, rgba(27, 161, 150, 1) 50%, rgba(40, 185, 154, 1) 100%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  background-color: white;
+  width: 1100px;
+  height: 700px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen {
+  background-image: url('https://res.cloudinary.com/dsl3anncy/image/upload/v1635215799/girl-trip-wallpaper-preview_uqqsro.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.form_login {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form_container {
+  display: flex;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input, select {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  width: 70%;
+  margin: 8px 0;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+ .button {
+  background: linear-gradient(90deg, rgba(41, 191, 154, 1) 0%, rgba(27, 161, 150, 1) 50%, rgba(40, 185, 154, 1) 100%);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 70%;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  display: flex;
+  padding: 0px 5px 0px 0px;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .login {
+    grid-template-columns: repeat(1, 1fr);
+    height: 400px;
+  }
+  .imagen {
+    display: none;
+  }
+  .form_login {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form_container {
+    width: 100%;
+  }
+  input {
+    width: 50%;
+  }
+}
