@@ -8,16 +8,20 @@ import { sendData } from "../helpers/sendData";
 
 function App() {
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const alert = useAlert();
   const input = useRef();
 
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     sendData(data)
+      .then(res => {
+        alert.success('Se ha registrado tu respeusta!')
+        reset()
+      })
   }
 
   const onInvalid = () => {
-      alert.error('Necesitas ingresar tu nombre')
+    alert.error('Necesitas ingresar tu nombre')
   }
 
   return (
