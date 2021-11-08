@@ -103,6 +103,7 @@ img {
   .login {
     grid-template-columns: repeat(1, 1fr);
     height: 400px;
+    margin: 10px;
   }
   .imagen {
     display: none;
@@ -114,10 +115,12 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+  
   .form_container {
     width: 100%;
   }
-  input {
-    width: 50%;
+  input, select {
+    width: 70%;
+    box-sizing: content-box;
   }
 }
